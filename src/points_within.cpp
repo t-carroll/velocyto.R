@@ -1,5 +1,8 @@
 #include <R.h>
 #include <Rinternals.h>
+
+#undef length
+
 #include <set>
 using namespace std;
 
