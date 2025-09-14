@@ -11,7 +11,7 @@ CXX17=$(LLVMBASE)/bin/clang++ -fopenmp
 CXX1X=$(LLVMBASE)/bin/clang++ -fopenmp
 
 CPPFLAGS=-isystem "$(LLVMBASE)/include" -isysroot "$(XCBASE)"
-LDFLAGS=-L"$(LLVMBASE)/lib" -L"$(GETTEXT)/lib" --sysroot="$(XCBASE)"
+LDFLAGS=-L"$(LLVMBASE)/lib" -L"$(GETTEXT)/lib" --sysroot="$(XCBASE) -L/opt/local/lib
 
 FC=$(GCCBASE)/bin/gfortran -fopenmp
 F77=$(GCCBASE)/bin/gfortran -fopenmp
